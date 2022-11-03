@@ -31,6 +31,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isSnakecase from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-snakecase@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-snakecase/tags). For example,
+
+```javascript
 import isSnakecase from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-snakecase@v0.0.1-deno/mod.js';
 ```
 
@@ -67,7 +72,7 @@ bool = isSnakecase( 'Hello World' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isSnakecase from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-snakecase@v0.0.1-deno/mod.js';
+import isSnakecase from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-snakecase@deno/mod.js';
 
 var bool = isSnakecase( 'foo_bar_baz' );
 // returns true
