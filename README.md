@@ -31,6 +31,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isSnakecase from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-snakecase@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-snakecase/tags). For example,
+
+```javascript
 import isSnakecase from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-snakecase@v0.0.4-esm/index.mjs';
 ```
 
@@ -72,7 +77,7 @@ bool = isSnakecase( 'Hello World' );
 <body>
 <script type="module">
 
-import isSnakecase from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-snakecase@v0.0.4-esm/index.mjs';
+import isSnakecase from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-snakecase@esm/index.mjs';
 
 var bool = isSnakecase( 'foo_bar_baz' );
 // returns true
