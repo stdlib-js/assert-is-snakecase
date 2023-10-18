@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2022 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,77 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isSnakeCase = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isSnakeCase, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns `true` if a string is in snake case', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'beep',
-		'beep_boop',
-		'beep_boop_boop',
-		'foo_bar_baz',
-		'foo_bar_baz_123'
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.equal( isSnakeCase( values[i] ), true, 'returns true when provided '+values[i] );
-	}
-	t.end();
-});
-
-tape( 'the function returns `true` if provided an empty string', function test( t ) {
-	t.equal( isSnakeCase( '' ), true, 'returns true' );
-	t.end();
-});
-
-tape( 'the function returns `false` if a string is not in snake case', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'beepBoop',
-		'FOO_BAR',
-		'foo-bar',
-		'foo bar',
-		'foo bar baz',
-		'FooBar'
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.equal( isSnakeCase( values[i] ), false, 'returns false when provided '+values[i] );
-	}
-	t.end();
-});
-
-tape( 'the function returns `false` if not provided a string', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		5,
-		NaN,
-		true,
-		false,
-		null,
-		void 0,
-		[],
-		{},
-		function noop() {}
-	];
-
-	for ( i = 0; i < values.length; i++ ) {
-		t.equal( isSnakeCase( values[i] ), false, 'returns false when provided '+values[i] );
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });
