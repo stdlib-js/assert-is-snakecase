@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isSnakecase from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-snakecase@deno/mod.js';
+import isSnakecase from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-snakecase@v0.2.2-deno/mod.js';
 ```
 
 #### isSnakecase( value )
@@ -78,7 +78,7 @@ bool = isSnakecase( 'Hello World' );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isSnakecase from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-snakecase@deno/mod.js';
+import isSnakecase from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-snakecase@v0.2.2-deno/mod.js';
 
 var bool = isSnakecase( 'foo_bar_baz' );
 // returns true
