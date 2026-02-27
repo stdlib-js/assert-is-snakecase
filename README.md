@@ -155,6 +155,8 @@ Options:
 
 </section>
 
+<!-- /.usage -->
+
 <!-- CLI usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 <section class="notes">
@@ -176,8 +178,6 @@ Options:
 
 <!-- /.notes -->
 
-<!-- /.usage -->
-
 <section class="examples">
 
 ### Examples
@@ -186,8 +186,6 @@ Options:
 $ is-snakecase foo_bar
 true
 ```
-
-</section>
 
 To use as a [standard stream][standard-streams],
 
@@ -203,6 +201,8 @@ $ echo -n 'fooBar\tbeep_boop' | is-snakecase --split '\t'
 false
 true
 ```
+
+</section>
 
 <!-- /.examples -->
 
